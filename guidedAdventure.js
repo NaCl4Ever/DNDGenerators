@@ -138,5 +138,109 @@ switch(value){
 	return experience;
 }
 
+function OtherGoals(value){
+experience = "";
+switch(value){
+	case 1:
+	experience = "Seize control of a fortified location such as a fortress, town, or ship";
+	break;
+	case 2:
+	experience = "Defend a location from attackers";
+	break;
+	case 3:
+	experience = "Retrieve an object from inside a secure location in a settlement. ";
+	break;
+	case 4:
+	experience = "Retrieve an object from inside a secure location in a settlement";
+	break;
+	case 5:
+	experience = "Salvage an object or goods from a lost vessel or caravan";
+	break;
+	case 6:
+	experience = "Break a prisoner out of a jail or prison camp";
+	break;
+	case 7:
+	experience = "Escape froma  a jail or a prison camp";
+	break;
+	case 8:
+	experience = "Successfully travel through an obstacle course to gain recognition or reward.";
+	break;
+	case 9:
+	experience = "Find the source of strange occurrences in a haunted house or other location";
+	break;
+	case 10:
+	experience = "Infiltrate a fortified location";
+	break;
+	case 11:
+	experience = "Interfere with the operation of a business";
+	break;
+	case 12:
+	experience = "Rescue a character, monster, or object from a natural or unnatural disaster";
+	break;
+	default: experience = "Something didn't go right sorry spin again";
+}
+
+	return experience;
+}
+
+function Villains(value){
+experience = "";
+switch(value){
+	case 1:
+	experience = "Beast or monstrosity with no particular agenda";
+	break;
+	case 2:
+	experience = "Abberration bent on corruption or domination";
+	break;
+	case 3:
+	experience = "Fiend bent on corruption or destruction";
+	break;
+	case 4:
+	experience = "Dragon bent on domination and plunder";
+	break;
+	case 5:
+	experience = "Giant bent on plunder";
+	break;
+	case 6:
+	case 7:
+	experience = "Undead with any agenda";
+	break;
+	case 8:
+	experience = "Fey with a myserious goal";
+	break;
+	case 9:
+	case 10:
+	experience = "Humanoid cultist";
+	break;
+	case 11:
+	case 12:
+	experience = "Humanoid conqueror";
+	break;
+	case 13:
+	experience = "Humanoid seeking revenge";
+	break;
+	case 14:
+	case 15:
+	experience = "Humanoid schemer seeking to rule";
+	break;
+	case 16:
+	experience = "Humanoid criminal mastermind";
+	break;
+	case 17:
+	case 18:
+	experience = "Huamnoid raider or ravager";
+	break;
+	case 19:
+	experience = "Humanoid under a curse";
+	break;
+	case 20:
+	experience = "Misguided Huamnoid zealot";
+	break;
+	default: experience = "Something didn't go right sorry spin again";
+}
+
+	return experience;
+}
+
 console.log(DungeonGoals(RNGeesus(1,20)));
 console.log(WildernessGoals(RNGeesus(1,20)));
