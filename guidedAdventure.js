@@ -242,5 +242,157 @@ switch(value){
 	return experience;
 }
 
+function Allies(value){
+experience = "";
+switch(value){
+	case 1:
+	experience = "Skilled adventurer";
+	break;
+	case 2:
+	experience = "Inexperienced adventurer";
+	break;
+	case 3:
+	experience = "Enthusiastic commoner";
+	break;
+	case 4:
+	experience = "Soldier";
+	break;
+	case 5:
+	experience = "Priest";
+	break;
+	case 6:
+	experience = "Sage";
+	break;
+	case 7:
+	experience = "Revenge seeker";
+	break;
+	case 8:
+	experience = "Raving lunatic";
+	break;
+	case 9:
+	experience = "Celestial ally";
+	break;
+	case 10:
+	experience = "Fey ally";
+	break;
+	case 11:
+	experience = "Disguised monster";
+	break;
+	case 12:
+	experience = "Villain posing as an ally";
+	break;
+	
+	default: experience = "Something didn't go right sorry spin again";
+}
+
+	return experience;
+}
+
+function Patrons(value){
+experience = "";
+switch(value){
+	case 1:
+	case 2:
+	experience = "Retired adventurer";
+	break;
+	case 3:
+	case 4:
+	experience = "Local ruler";
+	break;
+	case 5:
+	case 6:
+	experience = "Militar officer";
+	break;
+	case 7:
+	case 8:
+	experience = "Temple official";
+	break;
+	case 9:
+	case 10:
+	experience = "Sage";
+	break;
+	case 11:
+	case 12:
+	experience = "Respected elder";
+	break;
+	case 13:
+	experience = "Deity or celestial";
+	break;
+	case 14:
+	experience = "Mysterious fey";
+	break;
+	case 15:
+	experience = "Old friend";
+	break;
+	case 16:
+	experience = "Former teacher";
+	break;
+	case 17:
+	experience = "Parent or other family member";
+	break;
+	case 18:
+	experience = "Desperate commoner";
+	break;
+	case 19:
+	experience = "Embattled merchant";
+	break;
+	case 20:
+	experience = "Villain posing as a patron";
+	break;
+	
+	default: experience = "Something didn't go right sorry spin again";
+}
+
+	return experience;
+}
+
+function Climax(value){
+experience = "";
+switch(value){
+	case 1:
+	experience = "The adventurers confront the main villain and a group of minions in a bloody battle to the finish";
+	break;
+	case 2:
+	experience = "The adventurers chase the villain while dodging obstacles designed to thwart them, leading to a final confrontation in or outside the villain's regfuge.";
+	break;
+	case 3:
+	experience = "The actions of the adventurers or the villain result in a cataclysmic event that the adventurers must escape. ";
+	break;
+	case 4:
+	experience = "The adventurers race tot he site where the villain is bringing a master plan to its conclusion, arriving ust as that plan is about to be completed.";
+	break;
+	case 5:
+	experience = "The villain and two or three lieutenants perfrom separate rites in a large room. The adventurers must disrupt all the rites at the same time. ";
+	break;
+	case 6:
+	experience = "An ally betrays the adventurers as they're about to achieve their goal.";
+	break;
+	case 7:
+	experience = "A portal opens to another plane of existence. Creatures on the other side spill out, forcing the adventurers to close the portal and deal with the villain at the same time. ";
+	break;
+	case 8:
+	experience = "Traps, hazards, or animated objects turn against the adventurers whiel the main villain attacks";
+	break;
+	case 9:
+	experience = "The dungeon begins to collapse while the adventurers face the main villain, who attempts to escape";
+	break;
+	case 10:
+	experience = "A threat more powerful than the adventurers appears, destroys the main villain, and then turns its attention on the characters.";
+	break;
+	case 11:
+	experience = "The adventurers must choose whether to pursue the fleeing main villain or save an NPC they care about or a group of innocents";
+	break;
+	case 12:
+	experience = "The adventurers must discover the amin villain's secret weakness before they can hope to defeat that villain";
+	break;
+	
+	default: experience = "Something didn't go right sorry spin again";
+}
+
+	return experience;
+}
+
+
+
 console.log(DungeonGoals(RNGeesus(1,20)));
 console.log(WildernessGoals(RNGeesus(1,20)));
