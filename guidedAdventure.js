@@ -1,3 +1,5 @@
+
+
 function RNGeesus (low, high){
 		return Math.floor(Math.random() * (high - low +1) + low);
 }
@@ -392,7 +394,19 @@ switch(value){
 	return experience;
 }
 
+var allies = "";
+for(var x =0; x <  RNGeesus(0,2); x++)
+{
+	allies += Allies(RNGeesus(1,12));
 
 
-console.log(DungeonGoals(RNGeesus(1,20)));
-console.log(WildernessGoals(RNGeesus(1,20)));
+}
+console.log(
+"Dungeon Goals :" + DungeonGoals(RNGeesus(1,20)) + "\n" +
+"Wilderness Goals :" + WildernessGoals(RNGeesus(1,20)) + "\n" + 
+"Side Goals : " + OtherGoals(RNGeesus(1,12)) + "\n" +
+"Patron : " + Patrons(RNGeesus(1,20))  + "\n" +
+"Allies : " + allies  + "\n" +
+"Villains : " + Villains(RNGeesus(1,20))  + "\n" 
+ 
+	);
