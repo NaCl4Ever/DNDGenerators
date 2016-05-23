@@ -394,19 +394,46 @@ switch(value){
 	return experience;
 }
 
-var allies = "";
-for(var x =0; x <  RNGeesus(0,2); x++)
-{
-	allies += Allies(RNGeesus(1,12));
 
-
+function generateQuest(area, allies, locale){
+	var quest = "Your randomly generated quest is:" + "\n";
+	if(area == 1)
+		quest += "Dungeon Goals :" + DungeonGoals(RNGeesus(1,20)) + "\n";
+	else
+		quest += "Wilderness Goals :" + WildernessGoals(RNGeesus(1,20)) + "\n";
+	if(locale !== undefined)
+		quest += "Location: " + locale + "\n";
+	if(allies == 1)
+	{
+		for(var x =0; x <  RNGeesus(0,2); x++)
+		{
+			quest += "Ally " + (x+1) + " :" +  Allies(RNGeesus(1,12)) + "\n";
+		}
+	}
+	quest += "Side Goals : " + OtherGoals(RNGeesus(1,12)) +
+	 "\n" + "Patron : " + Patrons(RNGeesus(1,20))  + "\n" + 
+	 "Villains : " + Villains(RNGeesus(1,20))  + "\n" ;
+	return quest;
 }
-console.log(
-"Dungeon Goals :" + DungeonGoals(RNGeesus(1,20)) + "\n" +
-"Wilderness Goals :" + WildernessGoals(RNGeesus(1,20)) + "\n" + 
-"Side Goals : " + OtherGoals(RNGeesus(1,12)) + "\n" +
-"Patron : " + Patrons(RNGeesus(1,20))  + "\n" +
-"Allies : " + allies  + "\n" +
-"Villains : " + Villains(RNGeesus(1,20))  + "\n" 
- 
-	);
+
+
+
+var locationArg, localeArg, allyArg;
+
+if(process.argv[2] !== undefined)
+{
+	locationArg = process.argv[2]
+}
+
+if(process.argv[3] !== undefined)
+{
+	// number of allies
+	allyArg = process.argv[3];
+}
+if(process.argv[4] !== undefined)
+{
+	// area for quest to be
+	localeArg = process.argv[4];
+}
+
+console.log(generateQuest(locationArg, allyArg, localeArg));
