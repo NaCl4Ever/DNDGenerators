@@ -1,4 +1,4 @@
-
+var argv = require('minimist')(process.argv.slice(2));
 
 function RNGeesus (low, high){
 		return Math.floor(Math.random() * (high - low +1) + low);
@@ -435,5 +435,10 @@ if(process.argv[4] !== undefined)
 	// area for quest to be
 	localeArg = process.argv[4];
 }
-
-console.log(generateQuest(locationArg, allyArg, localeArg));
+if(argv.help == true){
+	console.log("This tool is designed to generate either a single instance or entire quest line frameworks for a Dungeons and Dragons campaign. You can enter a list of towns and the application will then generate a number of quest for that area based on it's size." );
+}
+else{
+	console.log(generateQuest(locationArg, allyArg, localeArg));
+}
+console.log(argv);

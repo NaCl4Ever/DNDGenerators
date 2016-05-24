@@ -1,0 +1,23 @@
+{
+  "name": "questgenerator",
+  "version": "0.1.0",
+  "description": "Creates quests for either dungeons or wilderness encounters",
+  "main": "guidedAdventure.js",
+  "dependencies": {
+    "minimist": "^1.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NaCl4Ever/DNDGenerators.git"
+  },
+  "author": "Jordan A Pectyo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NaCl4Ever/DNDGenerators/issues"
+  },
+  "homepage": "https://github.com/NaCl4Ever/DNDGenerators#readme"
+}
